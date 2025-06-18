@@ -384,7 +384,7 @@ const Index = () => {
                 <Mail className="w-6 h-6 text-red-500" />
                 <div>
                   <p className="font-semibold">Email</p>
-                  <p className="text-gray-400">dennis.kibet@gmail.com</p>
+                  <p className="text-gray-400">kibetdennis4136@gmail.com</p>
                 </div>
               </div>
               
@@ -392,7 +392,7 @@ const Index = () => {
                 <Phone className="w-6 h-6 text-red-500" />
                 <div>
                   <p className="font-semibold">Phone</p>
-                  <p className="text-gray-400">+254 712 345 678</p>
+                  <p className="text-gray-400">+254 700545425</p>
                 </div>
               </div>
               
@@ -455,7 +455,7 @@ const Index = () => {
       <footer className="py-8 bg-slate-950 border-t border-slate-800">
         <div className="container mx-auto px-6 text-center">
           <p className="text-gray-400">
-            © 2024 Dennis Kibet. All rights reserved. Crafted with passion in Kenya.
+            © 2024 Dennis Kibet. All rights reserved. Guru Creations limited.
           </p>
         </div>
       </footer>
