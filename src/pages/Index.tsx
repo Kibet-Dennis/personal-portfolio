@@ -25,6 +25,8 @@ import {
   Briefcase,
   MessageSquare
 } from "lucide-react";
+import { Description } from "@radix-ui/react-toast";
+import { title } from "process";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -62,88 +64,88 @@ const Index = () => {
   const projects = [
     {
       id: 1,
-      title: "Corporate Event Coverage",
+      title: "Event Coverage:- Livestreaming/ Photography",
       description: "Professional event documentation with cinematic storytelling approach",
-      category: "Event Coverage",
-      tools: ["Premiere Pro", "After Effects", "Canon R5"],
+      category: "Corporate Event Coverage",
+      tools: ["Premiere Pro", "After Effects", "Canon R5 "],
       thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop"
     },
     {
       id: 2,
-      title: "Documentary: Kenyan Entrepreneurs",
-      description: "Feature-length documentary showcasing innovative business minds",
+      title: "Kenya Paraplegic Organization Documentary",
+      description: "In-depth documentary showcasing the impact of KPO's work in the community",
       category: "Documentaries",
-      tools: ["Final Cut Pro", "DaVinci Resolve", "Sony FX6"],
+      tools: ["Final Cut Pro", "DaVinci Resolve", "Sony FX"],
       thumbnail: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&h=400&fit=crop"
     },
     {
       id: 3,
-      title: "YouTube Content Series",
-      description: "Weekly educational content with engaging visual storytelling",
-      category: "YouTube Content",
-      tools: ["Premiere Pro", "Photoshop", "Canva"],
+      title: "Content",
+      description: "Engaging YouTube video production for a local content creator, focusing on spreading the gospel of GOD,lifestyle and travel,Politics/football,content strategy, and audience engagement",
+      category: "YouTube/Facebook/Instagram/TikTok/X",
+      tools: ["livestreaming", "OBS Studio" , "Adobe Premiere Pro" ,"Final Cut Pro" , " DaVinci Resolve"],
       thumbnail: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop"
     },
     {
       id: 4,
       title: "Brand Commercial",
-      description: "High-impact commercial for local tech startup",
+      description: "Cinematic commercial for a local brand, highlighting their products and values",
       category: "Commercial",
       tools: ["Cinema 4D", "After Effects", "Premiere Pro"],
-      thumbnail: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop"
+      thumbnail: "https://i.postimg.cc/HkGC6JWM/mmmmmmmmm.jpg=crop"
     }
   ];
 
   const services = [
     {
       icon: <Film className="w-8 h-8" />,
-      title: "Video Production",
-      description: "Complete video production from concept to final cut"
-    },
+      title: "Livestreaming/productions",
+      description: "High-quality streaming for weddings, conferences, church services, and music events,Real-time audience engagement tools",
+        },
     {
       icon: <Edit3 className="w-8 h-8" />,
-      title: "Video Editing",
-      description: "Professional editing with cinematic storytelling approach"
+      title: " Branding & Design",
+      description: "Visual identity creation, including logo design, brand guidelines, and marketing materials for businesses and individuals"
     },
     {
       icon: <Camera className="w-8 h-8" />,
       title: "Event Coverage",
-      description: "Comprehensive documentation of corporate and social events"
+      description: "Photography (Events, Lifestyle, Studio),Videography (Events, Weddings, Corporate),Drone Shots & Aerial Coverage",
     },
     {
       icon: <Youtube className="w-8 h-8" />,
       title: "YouTube Strategy",
-      description: "Content strategy and optimization for YouTube success"
+      description: "YouTube channel management, content strategy, video editing, and audience growth strategies for creators and brands"
     },
     {
       icon: <Palette className="w-8 h-8" />,
-      title: "Color Grading",
-      description: "Professional color correction and cinematic grading"
+      title: "Digital Strategy",
+      description: "Comprehensive digital media strategy development, including content planning, audience targeting, and platform optimization"
     },
     {
       icon: <Monitor className="w-8 h-8" />,
-      title: "Motion Graphics",
-      description: "Engaging animations and visual effects for your content"
+      title: "Web Design",
+      description: "Engaging and responsive web design for brands and individuals,including portfolio sites and e-commerce solutions"
     }
   ];
 
   const testimonials = [
     {
-      name: "Sarah Mitchell",
-      role: "Marketing Director",
-      company: "TechStart Kenya",
+      name: "MR Saisi",
+      role: "Director",
+      company: "Red House Media",
       content: "Dennis delivered exceptional quality work that exceeded our expectations. His cinematic approach brought our brand story to life."
     },
     {
-      name: "James Ochieng",
-      role: "Event Coordinator",
-      company: "Premier Events",
+      name: "Summary Wafula ",
+      role: "Director/Producer",
+      company: "summarycreativelimited",
       content: "Professional, creative, and reliable. Dennis captured our event beautifully and delivered the final video ahead of schedule."
     },
     {
-      name: "Maria Santos",
-      role: "Content Creator",
-      company: "Digital Nomads Africa",
+      name: "Oliver Ishiva",
+      role: "Web Developer",
+      company: "Ambriel Technologies",
       content: "Working with Dennis transformed our YouTube channel. His strategic approach and editing skills significantly increased our engagement."
     }
   ];
@@ -231,7 +233,7 @@ const Index = () => {
               </p>
               
               <p className="text-gray-300 text-lg leading-relaxed">
-                With over 5 years of experience in video production, content creation, and digital strategy, 
+                With over 4 years of experience in video production, content creation, and digital strategy, 
                 I've helped brands and individuals tell their stories through compelling visual content 
                 that resonates with audiences across Africa and beyond.
               </p>
@@ -240,7 +242,7 @@ const Index = () => {
                 <div className="flex items-center gap-3">
                   <Award className="w-6 h-6 text-red-400" />
                   <div>
-                    <p className="font-semibold">5+ Years</p>
+                    <p className="font-semibold">4+ Years</p>
                     <p className="text-gray-400 text-sm">Experience</p>
                   </div>
                 </div>
