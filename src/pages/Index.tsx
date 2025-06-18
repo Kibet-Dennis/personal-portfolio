@@ -191,7 +191,7 @@ const Index = () => {
               Digital Media Producer & Storyteller
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Passionate about creating compelling visual narratives that connect, inspire, and drive results. 
+              Passionate about photography, streaming/video production, & creating compelling visual narratives that connect, inspire, and drive results. 
               From Kenya with love for cinematic storytelling.
             </p>
             
@@ -229,13 +229,13 @@ const Index = () => {
               
               <p className="text-gray-300 text-lg leading-relaxed">
                 I am a passionate Digital Media Producer from Kenya with a strong focus in visual 
-                storytelling. I love to craft engaging narratives and always learn from my surroundings.
+                storytelling Photography, Livestraming productions, I love to craft engaging narratives and always learn from my surroundings.
               </p>
               
               <p className="text-gray-300 text-lg leading-relaxed">
-                With over 4 years of experience in video production, content creation, and digital strategy, 
+                With over 4 years of experience in Photography, Stream/video production, content creation, and digital strategy, 
                 I've helped brands and individuals tell their stories through compelling visual content 
-                that resonates with audiences across Africa and beyond.
+                that resonates with audiences across Kenya and beyond.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mt-8">
