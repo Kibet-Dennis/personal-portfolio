@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -27,6 +26,23 @@ import {
 } from "lucide-react";
 import { Description } from "@radix-ui/react-toast";
 import { title } from "process";
+import { 
+  FaEnvelope, FaYoutube, FaFacebook, FaInstagram, 
+  FaTiktok, FaXTwitter, FaLinkedin, FaTelegram, FaGithub, FaGlobe 
+} from 'react-icons/fa6';
+
+const iconStyles = {
+  envelope:   { color: '#EA4335' }, // Gmail Red
+  youtube:    { color: '#FF0000' },
+  facebook:   { color: '#1877F3' },
+  instagram:  { color: '#E4405F' },
+  tiktok:     { color: '#fff' },    // White
+  x:          { color: '#fff' },    // White
+  linkedin:   { color: '#0A66C2' },
+  telegram:   { color: '#229ED9' },
+  github:     { color: '#fff' },    // White
+  globe:      { color: '#4CAF50' }
+};
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -84,7 +100,7 @@ const Index = () => {
       description: "Engaging YouTube video production for a local content creator, focusing on spreading the gospel of GOD,lifestyle and travel,Politics/football,content strategy, and audience engagement",
       category: "YouTube/Facebook/Instagram/TikTok/X",
       tools: ["livestreaming", "OBS Studio" , "Adobe Premiere Pro" ,"Final Cut Pro" , " DaVinci Resolve"],
-      thumbnail: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop"
+      thumbnail: "https://i.postimg.cc/h4m8JrPT/495390099-679511234852033-2870589732951527553-n.jpg      npm install react-icons      npm install react-icons"
     },
     {
       id: 4,
@@ -459,6 +475,38 @@ const Index = () => {
           <p className="text-gray-400">
             © 2024 Dennis Kibet. All rights reserved. Guru Creations limited.
           </p>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1rem' }}>
+            <a href="mailto:kibetdennis4136@gmail.com" title="Email">
+              <FaEnvelope size={24} style={iconStyles.envelope} />
+            </a>
+            <a href="https://youtube.com/@gurucreationltd" target="_blank" rel="noopener noreferrer" title="YouTube">
+              <FaYoutube size={24} style={iconStyles.youtube} />
+            </a>
+            <a href="https://facebook.com/denniskibet" target="_blank" rel="noopener noreferrer" title="Facebook">
+              <FaFacebook size={24} style={iconStyles.facebook} />
+            </a>
+            <a href="https://instagram.com/denniskibet" target="_blank" rel="noopener noreferrer" title="Instagram">
+              <FaInstagram size={24} style={iconStyles.instagram} />
+            </a>
+            <a href="https://tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer" title="TikTok">
+              <FaTiktok size={24} style={iconStyles.tiktok} />
+            </a>
+            <a href="https://x.com/@Dennis_2kibet" target="_blank" rel="noopener noreferrer" title="X">
+              <FaXTwitter size={24} style={iconStyles.x} />
+            </a>
+            <a href="https://linkedin.com/in/denniskibet" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <FaLinkedin size={24} style={iconStyles.linkedin} />
+            </a>
+            <a href="https://telegram.me/denniskibet" target="_blank" rel="noopener noreferrer" title="Telegram">
+              <FaTelegram size={24} style={iconStyles.telegram} />
+            </a>
+            <a href="https://github.com/Kibet-Dennis" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <FaGithub size={24} style={iconStyles.github} />
+            </a>
+            <a href="https://kibet-dennis.github.io/guru-creations/" target="_blank" rel="noopener noreferrer" title="Website">
+              <FaGlobe size={24} style={iconStyles.globe} />
+            </a>
+          </div>
         </div>
       </footer>
 
