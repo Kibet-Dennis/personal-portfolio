@@ -150,20 +150,23 @@ const Index = () => {
       name: "Mr. Fred Saisi",
       role: "Director",
       company: "Red House Media",
-      content: "Dennis delivered exceptional quality work that exceeded our expectations. His cinematic approach brought our brand story to life."
+      content:
+        "Dennis delivered exceptional quality work that exceeded our expectations. His cinematic approach brought our brand story to life.",
     },
     {
       name: "Mr. Summary Wafula ",
       role: "Director/Producer",
       company: "summarycreativelimited",
-      content: "Professional, creative, and reliable. Dennis captured our event beautifully and delivered the final video ahead of schedule."
+      content:
+        "Professional, creative, and reliable. Dennis captured our event beautifully and delivered the final video ahead of schedule.",
     },
     {
       name: "Mr. Oliver Ishiva",
       role: "Web Developer",
-      company: "Ambriel Technologies",
-      content: "Working with Dennis transformed our YouTube channel. His strategic approach and editing skills significantly increased our engagement."
-    }
+      company: "Ambrel Technologies",
+      content:
+        "Working with Dennis transformed our YouTube channel. His strategic approach and editing skills significantly increased our engagement.",
+    },
   ];
 
   return (
@@ -412,20 +415,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-slate-900">
+      {/* 🚀 Contact Section */}
+      <section
+        id="contact"
+        className="py-24 bg-gradient-to-b from-slate-900 via-slate-950 to-black text-white"
+      >
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Let's Work Together</h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Ready to bring your vision to life? Get in touch and let's create
-              something amazing together.
+            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+              Let’s Work <span className="text-red-500">Together</span>
+            </h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+              I’m excited to hear about your next big idea. Whether it’s a
+              project, brand launch, livestream, or visual campaign — let’s
+              create something extraordinary.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <div className="space-y-8">
-              <div className="flex items-center gap-4">
+            {/* Contact Info */}
+            <div className="space-y-8 text-sm md:text-base">
+              <div className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-red-500" />
                 <div>
                   <p className="font-semibold">Email</p>
@@ -433,15 +443,15 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-start gap-4">
                 <Phone className="w-6 h-6 text-red-500" />
                 <div>
                   <p className="font-semibold">Phone</p>
-                  <p className="text-gray-400">+254 700545425</p>
+                  <p className="text-gray-400">+254 700 545 425</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-red-500" />
                 <div>
                   <p className="font-semibold">Location</p>
@@ -449,67 +459,84 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* <div className="flex gap-4 pt-6">
-                <Button size="icon" variant="outline" className="border-slate-700 hover:border-red-500">
-                  <Youtube className="w-5 h-5" />
-                </Button>
-                <Button size="icon" variant="outline" className="border-slate-700 hover:border-red-500">
-                  <Instagram className="w-5 h-5" />
-                </Button>
+              {/* Social Media */}
+              <div className="flex gap-4 pt-6">
+                {/* <Button
+                  size="icon"
+                  variant="outline"
+                  className="border-slate-700 hover:border-red-500 transition-all duration-300"
+                >
+                  <Youtube className="w-5 h-5 text-white" />
+                </Button> */}
+                {/* <Button
+                  size="icon"
+                  variant="outline"
+                  className="border-slate-700 hover:border-red-500 transition-all duration-300"
+                >
+                  <Instagram className="w-5 h-5 text-white" />
+                </Button> */}
               </div>
-            </div> */}
+            </div>
 
-              <Card className="bg-slate-950 border-slate-800 p-6">
-                <div className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium mb-2">
-                        Name
-                      </label>
-                      <Input
-                        className="bg-slate-900 border-slate-700"
-                        placeholder="Your name"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium mb-2">
-                        Email
-                      </label>
-                      <Input
-                        className="bg-slate-900 border-slate-700"
-                        placeholder="your@email.com"
-                      />
-                    </div>
-                  </div>
-
+            {/* Contact Form */}
+            <Card className="bg-slate-950 border border-slate-800 p-8 shadow-xl hover:shadow-red-700/20 transition-shadow duration-300">
+              <form className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium mb-2">
-                      Subject
+                      Name
                     </label>
                     <Input
-                      className="bg-slate-900 border-slate-700"
-                      placeholder="Project inquiry"
+                      required
+                      className="bg-slate-900 border-slate-700 focus:border-red-500 focus:ring-red-500"
+                      placeholder="Your full name"
                     />
                   </div>
-
                   <div>
                     <label className="block text-sm font-medium mb-2">
-                      Message
+                      Email
                     </label>
-                    <Textarea
-                      className="bg-slate-900 border-slate-700"
-                      placeholder="Tell me about your project..."
-                      rows={4}
+                    <Input
+                      required
+                      type="email"
+                      className="bg-slate-900 border-slate-700 focus:border-red-500 focus:ring-red-500"
+                      placeholder="you@example.com"
                     />
                   </div>
-
-                  <Button className="w-full bg-red-600 hover:bg-red-700">
-                    <MessageSquare className="w-4 h-4 mr-2" />
-                    Send Message
-                  </Button>
                 </div>
-              </Card>
-            </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-2">
+                    Subject
+                  </label>
+                  <Input
+                    required
+                    className="bg-slate-900 border-slate-700 focus:border-red-500 focus:ring-red-500"
+                    placeholder="Let’s talk about..."
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-2">
+                    Message
+                  </label>
+                  <Textarea
+                    required
+                    rows={5}
+                    className="bg-slate-900 border-slate-700 focus:border-red-500 focus:ring-red-500"
+                    placeholder="Tell me about your project or idea..."
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  className="w-full bg-red-600 hover:bg-red-700 transition duration-300 font-semibold"
+                >
+                  <MessageSquare className="w-4 h-4 mr-2" />
+                  Send Message
+                </Button>
+              </form>
+            </Card>
           </div>
         </div>
       </section>
