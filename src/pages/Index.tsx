@@ -175,31 +175,38 @@ const Index = () => {
             Dennis <span className="text-white">Kibet</span>
           </div>
           <div className="hidden md:flex space-x-8">
-            {["home", "about", "portfolio", "services", "contact"].map((section) => (
-              <button
-                key={section}
-                onClick={() => scrollToSection(section)}
-                className={`capitalize transition-colors hover:text-red-400 ${
-                  activeSection === section ? "text-red-400" : "text-gray-300"
-                }`}
-              >
-                {section}
-              </button>
-            ))}
+            {["home", "about", "portfolio", "services", "contact"].map(
+              (section) => (
+                <button
+                  key={section}
+                  onClick={() => scrollToSection(section)}
+                  className={`capitalize transition-colors hover:text-red-400 ${
+                    activeSection === section ? "text-red-400" : "text-gray-300"
+                  }`}
+                >
+                  {section}
+                </button>
+              )
+            )}
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section
+        id="home"
+        className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      >
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 opacity-90"></div>
         <div className="absolute inset-0">
           <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1536240478700-b869070f9279?w=1920&h=1080&fit=crop')] bg-cover bg-center opacity-20"></div>
         </div>
-        
+
         <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
           <div className="animate-fade-in">
-            <p className="text-red-400 text-lg mb-4 uppercase tracking-wider">Welcome to my world</p>
+            <p className="text-red-400 text-lg mb-4 uppercase tracking-wider">
+              Welcome to my world
+            </p>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               Hi, I'm <span className="text-red-500">Dennis Kibet</span>
             </h1>
@@ -207,22 +214,23 @@ const Index = () => {
               Digital Media Producer & Storyteller
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Passionate about photography, streaming/video production, & creating compelling visual narratives that connect, inspire, and drive results. 
-              From Kenya with love for cinematic storytelling.
+              Passionate about photography, streaming/video production, &
+              creating compelling visual narratives that connect, inspire, and
+              drive results. From Kenya with love for cinematic storytelling.
             </p>
-            
+
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full"
                 onClick={() => scrollToSection("portfolio")}
               >
                 <Play className="w-5 h-5 mr-2" />
                 View My Work
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
+              <Button
+                size="lg"
+                variant="outline"
                 className="border-red-500 text-red-400 hover:bg-red-500 hover:text-white px-8 py-3 rounded-full"
                 onClick={() => scrollToSection("contact")}
               >
@@ -242,16 +250,20 @@ const Index = () => {
                 <User className="w-8 h-8 text-red-500" />
                 <h2 className="text-4xl font-bold">Who I Am?</h2>
               </div>
-              
+
               <p className="text-gray-300 text-lg leading-relaxed">
-                I am a passionate Digital Media Producer from Kenya with a strong focus in visual 
-                storytelling Photography, Livestraming productions, I love to craft engaging narratives and always learn from my surroundings.
+                I am a passionate Digital Media Producer from Kenya with a
+                strong focus in visual storytelling Photography, Livestraming
+                productions, I love to craft engaging narratives and always
+                learn from my surroundings.
               </p>
-              
+
               <p className="text-gray-300 text-lg leading-relaxed">
-                With over 4 years of experience in Photography, Stream/video production, content creation, and digital strategy, 
-                I've helped brands and individuals tell their stories through compelling visual content 
-                that resonates with audiences across Kenya and beyond.
+                With over 4 years of experience in Photography, Stream/video
+                production, content creation, and digital strategy, I've helped
+                brands and individuals tell their stories through compelling
+                visual content that resonates with audiences across Kenya and
+                beyond.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mt-8">
@@ -276,11 +288,11 @@ const Index = () => {
                 Download CV
               </Button>
             </div>
-            
+
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-red-500 to-red-700 rounded-2xl p-1">
-                <img 
-                  src="https://i.postimg.cc/g24mjSsc/kibet-image.jpg" 
+                <img
+                  src="https://i.postimg.cc/g24mjSsc/kibet-image.jpg"
                   alt="Dennis Kibet"
                   className="w-full h-full object-cover rounded-2xl"
                 />
@@ -296,17 +308,20 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">My Portfolio</h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              A showcase of my best digital media projects, each crafted with attention to detail 
-              and storytelling excellence.
+              A showcase of my best digital media projects, each crafted with
+              attention to detail and storytelling excellence.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {projects.map((project) => (
-              <Card key={project.id} className="bg-slate-900 border-slate-800 overflow-hidden group hover:scale-105 transition-all duration-300">
+              <Card
+                key={project.id}
+                className="bg-slate-900 border-slate-800 overflow-hidden group hover:scale-105 transition-all duration-300"
+              >
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={project.thumbnail} 
+                  <img
+                    src={project.thumbnail}
                     alt={project.title}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
@@ -340,13 +355,17 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">My Services</h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Comprehensive digital media solutions tailored to bring your vision to life
+              Comprehensive digital media solutions tailored to bring your
+              vision to life
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="bg-slate-950 border-slate-800 p-6 hover:border-red-500/50 transition-all duration-300 group">
+              <Card
+                key={index}
+                className="bg-slate-950 border-slate-800 p-6 hover:border-red-500/50 transition-all duration-300 group"
+              >
                 <div className="text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
@@ -363,7 +382,9 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">What Clients Say</h2>
-            <p className="text-gray-400 text-lg">Feedback from amazing people I've worked with</p>
+            <p className="text-gray-400 text-lg">
+              Feedback from amazing people I've worked with
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -371,10 +392,15 @@ const Index = () => {
               <Card key={index} className="bg-slate-900 border-slate-800 p-6">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      className="w-5 h-5 text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
-                <p className="text-gray-300 mb-6 italic">"{testimonial.content}"</p>
+                <p className="text-gray-300 mb-6 italic">
+                  "{testimonial.content}"
+                </p>
                 <div>
                   <p className="font-bold">{testimonial.name}</p>
                   <p className="text-gray-400 text-sm">{testimonial.role}</p>
@@ -392,7 +418,8 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Let's Work Together</h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Ready to bring your vision to life? Get in touch and let's create something amazing together.
+              Ready to bring your vision to life? Get in touch and let's create
+              something amazing together.
             </p>
           </div>
 
@@ -405,7 +432,7 @@ const Index = () => {
                   <p className="text-gray-400">kibetdennis4136@gmail.com</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4">
                 <Phone className="w-6 h-6 text-red-500" />
                 <div>
@@ -413,7 +440,7 @@ const Index = () => {
                   <p className="text-gray-400">+254 700545425</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4">
                 <MapPin className="w-6 h-6 text-red-500" />
                 <div>
@@ -432,39 +459,57 @@ const Index = () => {
               </div>
             </div> */}
 
-            <Card className="bg-slate-950 border-slate-800 p-6">
-              <div className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Name</label>
-                    <Input className="bg-slate-900 border-slate-700" placeholder="Your name" />
+              <Card className="bg-slate-950 border-slate-800 p-6">
+                <div className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium mb-2">
+                        Name
+                      </label>
+                      <Input
+                        className="bg-slate-900 border-slate-700"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">
+                        Email
+                      </label>
+                      <Input
+                        className="bg-slate-900 border-slate-700"
+                        placeholder="your@email.com"
+                      />
+                    </div>
                   </div>
+
                   <div>
-                    <label className="block text-sm font-medium mb-2">Email</label>
-                    <Input className="bg-slate-900 border-slate-700" placeholder="your@email.com" />
+                    <label className="block text-sm font-medium mb-2">
+                      Subject
+                    </label>
+                    <Input
+                      className="bg-slate-900 border-slate-700"
+                      placeholder="Project inquiry"
+                    />
                   </div>
+
+                  <div>
+                    <label className="block text-sm font-medium mb-2">
+                      Message
+                    </label>
+                    <Textarea
+                      className="bg-slate-900 border-slate-700"
+                      placeholder="Tell me about your project..."
+                      rows={4}
+                    />
+                  </div>
+
+                  <Button className="w-full bg-red-600 hover:bg-red-700">
+                    <MessageSquare className="w-4 h-4 mr-2" />
+                    Send Message
+                  </Button>
                 </div>
-                
-                <div>
-                  <label className="block text-sm font-medium mb-2">Subject</label>
-                  <Input className="bg-slate-900 border-slate-700" placeholder="Project inquiry" />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium mb-2">Message</label>
-                  <Textarea 
-                    className="bg-slate-900 border-slate-700" 
-                    placeholder="Tell me about your project..." 
-                    rows={4}
-                  />
-                </div>
-                
-                <Button className="w-full bg-red-600 hover:bg-red-700">
-                  <MessageSquare className="w-4 h-4 mr-2" />
-                  Send Message
-                </Button>
-              </div>
-            </Card>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -475,35 +520,87 @@ const Index = () => {
           <p className="text-gray-400">
             © 2024 Dennis Kibet. All rights reserved. Guru Creations limited.
           </p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1rem' }}>
+          <div
+            style={{
+              display: "flex",
+              gap: "1rem",
+              justifyContent: "center",
+              marginTop: "1rem",
+            }}
+          >
             <a href="mailto:kibetdennis4136@gmail.com" title="Email">
               <FaEnvelope size={24} style={iconStyles.envelope} />
             </a>
-            <a href="https://youtube.com/@gurucreationltd" target="_blank" rel="noopener noreferrer" title="YouTube">
+            <a
+              href="https://youtube.com/@gurucreationltd"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="YouTube"
+            >
               <FaYoutube size={24} style={iconStyles.youtube} />
             </a>
-            <a href="https://facebook.com/denniskibet" target="_blank" rel="noopener noreferrer" title="Facebook">
+            <a
+              href="https://facebook.com/denniskibet"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Facebook"
+            >
               <FaFacebook size={24} style={iconStyles.facebook} />
             </a>
-            <a href="https://instagram.com/denniskibet" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <a
+              href="https://instagram.com/denniskibet"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram"
+            >
               <FaInstagram size={24} style={iconStyles.instagram} />
             </a>
-            <a href="https://tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer" title="TikTok">
+            <a
+              href="https://tiktok.com/@yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="TikTok"
+            >
               <FaTiktok size={24} style={iconStyles.tiktok} />
             </a>
-            <a href="https://x.com/@Dennis_2kibet" target="_blank" rel="noopener noreferrer" title="X">
+            <a
+              href="https://x.com/@Dennis_2kibet"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="X"
+            >
               <FaXTwitter size={24} style={iconStyles.x} />
             </a>
-            <a href="https://linkedin.com/in/denniskibet" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <a
+              href="https://linkedin.com/in/denniskibet"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+            >
               <FaLinkedin size={24} style={iconStyles.linkedin} />
             </a>
-            <a href="https://telegram.me/denniskibet" target="_blank" rel="noopener noreferrer" title="Telegram">
+            <a
+              href="https://telegram.me/denniskibet"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Telegram"
+            >
               <FaTelegram size={24} style={iconStyles.telegram} />
             </a>
-            <a href="https://github.com/Kibet-Dennis" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <a
+              href="https://github.com/Kibet-Dennis"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
+            >
               <FaGithub size={24} style={iconStyles.github} />
             </a>
-            <a href="https://kibet-dennis.github.io/guru-creations/" target="_blank" rel="noopener noreferrer" title="Website">
+            <a
+              href="https://kibet-dennis.github.io/guru-creations/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Website"
+            >
               <FaGlobe size={24} style={iconStyles.globe} />
             </a>
           </div>
@@ -512,8 +609,9 @@ const Index = () => {
 
       {/* WhatsApp Float Button */}
       <WhatsAppFloat />
-    </div>
+    </div> // This closes the div opened after "return ("
   );
 };
 
 export default Index;
+
