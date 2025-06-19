@@ -1,5 +1,7 @@
 # Welcome to my portfolio project
 
+![Image](https://github.com/user-attachments/assets/a768fb2f-e48b-45a5-b60c-f1351dfd884a)
+
 ## Project info
 
 **URL**: https://denniskibetporfolio.netlify.app/ 
