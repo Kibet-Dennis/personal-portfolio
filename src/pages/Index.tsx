@@ -30,6 +30,7 @@ import {
   FaEnvelope, FaYoutube, FaFacebook, FaInstagram, 
   FaTiktok, FaXTwitter, FaLinkedin, FaTelegram, FaGithub, FaGlobe 
 } from 'react-icons/fa6';
+import React from 'react';
 
 const iconStyles = {
   envelope:   { color: '#EA4335' }, // Gmail Red
@@ -81,14 +82,16 @@ const Index = () => {
     {
       id: 1,
       title: "Event Coverage:- Livestreaming/ Photography",
+      link: "https://your-link-to-corporate-event-coverage.com",
       description: "Professional event documentation with cinematic storytelling approach",
       category: "Corporate Event Coverage",
-      tools: ["Premiere Pro", "After Effects", "Canon R5 "],
+      tools: ["", "After Effects", "Canon R5 "],
       thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop"
     },
     {
       id: 2,
       title: "Kenya Paraplegic Organization Documentary",
+      link: "https://kibet-dennis.github.io/guru-creations/",
       description: "In-depth documentary showcasing the impact of KPO's work in the community",
       category: "Documentaries",
       tools: ["Final Cut Pro", "DaVinci Resolve", "Sony FX"],
@@ -97,6 +100,7 @@ const Index = () => {
     {
       id: 3,
       title: "Content",
+      link: "https://your-link-to-corporate-event-coverage.com",
       description: "Engaging YouTube video production for a local content creator, focusing on spreading the gospel of GOD,lifestyle and travel,Politics/football,content strategy, and audience engagement",
       category: "YouTube/Facebook/Instagram/TikTok/X",
       tools: ["livestreaming", "OBS Studio" , "Adobe Premiere Pro" ,"Final Cut Pro" , " DaVinci Resolve"],
@@ -105,11 +109,49 @@ const Index = () => {
     {
       id: 4,
       title: "Brand Commercial",
+      link: "https://your-link-to-corporate-event-coverage.com",
       description: "Cinematic commercial for a local brand, highlighting their products and values",
       category: "Commercial",
       tools: ["Cinema 4D", "After Effects", "Premiere Pro"],
       thumbnail: "https://i.postimg.cc/HkGC6JWM/mmmmmmmmm.jpg=crop"
-    }
+    },
+    {
+      id: 5,
+      title: "Web Design",
+       link: "https://your-link-to-corporate-event-coverage.com",
+      description: "Responsive and engaging web design for a local business, focusing on user experience and brand identity",
+      category: "Web Design",
+      tools: ["Figma", "Adobe XD", "HTML/CSS"],
+
+
+      thumbnail: "https://i.postimg.cc/3x1f5j6H/web-design.jpg"
+    },
+    {
+      id: 6,
+      title: "Digital Strategy",
+       link: "https://your-link-to-corporate-event-coverage.com",
+      description: "Comprehensive digital media strategy development, including content planning, audience targeting, and platform optimization",
+      category: "Digital Strategy",
+      tools: ["Google Analytics", "Hootsuite", "Canva"],
+      thumbnail: "https://i.postimg.cc/3x1f5j6H/digital-strategy.jpg"
+    },
+    {
+      id: 7,
+      title: "Photography",
+       link: "https://your-link-to-corporate-event-coverage.com",
+      description: "High-quality photography for events, lifestyle, and studio shoots, capturing moments with a creative touch",
+      category: "Photography",
+      tools: ["Canon R5", "Adobe Lightroom", "Photoshop"],
+    },
+    {
+      id: 8,
+      title: "Drone Shots & Aerial Coverage",
+       link: "https://your-link-to-corporate-event-coverage.com",
+      description: "Stunning aerial photography and videography for events, real estate, and landscapes",
+      category: "Drone Photography",
+      tools: ["DJI Mavic Air 2", "Adobe Premiere Pro", "Final Cut Pro"],
+      thumbnail: "https://i.postimg.cc/3x1f5j6H/drone-coverage.jpg"
+    },
   ];
 
   const services = [
@@ -340,9 +382,23 @@ const Index = () => {
                   <p className="text-gray-400 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tools.map((tool) => (
-                      <Badge key={tool} variant="outline" className="text-xs">
-                        {tool}
-                      </Badge>
+                      project.link ? (
+                        <a
+                          key={tool}
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ textDecoration: "underline" }}
+                        >
+                          <Badge variant="outline" className="text-xs hover:bg-red-500/20 hover:text-red-400 transition">
+                            {tool}
+                          </Badge>
+                        </a>
+                      ) : (
+                        <Badge key={tool} variant="outline" className="text-xs">
+                          {tool}
+                        </Badge>
+                      )
                     ))}
                   </div>
                 </CardContent>
