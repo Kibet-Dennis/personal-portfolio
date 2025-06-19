@@ -147,19 +147,19 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "MR Saisi",
+      name: "Mr. Fred Saisi",
       role: "Director",
       company: "Red House Media",
       content: "Dennis delivered exceptional quality work that exceeded our expectations. His cinematic approach brought our brand story to life."
     },
     {
-      name: "Summary Wafula ",
+      name: "Mr. Summary Wafula ",
       role: "Director/Producer",
       company: "summarycreativelimited",
       content: "Professional, creative, and reliable. Dennis captured our event beautifully and delivered the final video ahead of schedule."
     },
     {
-      name: "Oliver Ishiva",
+      name: "Mr. Oliver Ishiva",
       role: "Web Developer",
       company: "Ambriel Technologies",
       content: "Working with Dennis transformed our YouTube channel. His strategic approach and editing skills significantly increased our engagement."
