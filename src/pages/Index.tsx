@@ -422,7 +422,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="flex gap-4 pt-6">
+              {/* <div className="flex gap-4 pt-6">
                 <Button size="icon" variant="outline" className="border-slate-700 hover:border-red-500">
                   <Youtube className="w-5 h-5" />
                 </Button>
@@ -430,7 +430,7 @@ const Index = () => {
                   <Instagram className="w-5 h-5" />
                 </Button>
               </div>
-            </div>
+            </div> */}
 
             <Card className="bg-slate-950 border-slate-800 p-6">
               <div className="space-y-6">
