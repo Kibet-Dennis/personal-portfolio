@@ -78,88 +78,121 @@ const Index = () => {
     }
   };
 
-  const projects = [
-    {
-      id: 1,
-      title: "Event Coverage:- Livestreaming/ Photography",
-      link: "https://your-link-to-corporate-event-coverage.com",
-      description: "Professional event documentation with cinematic storytelling approach",
-      category: "Corporate Event Coverage",
-      tools: ["", "After Effects", "Canon R5 "],
-      thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop"
-    },
-    {
-      id: 2,
-      title: "Kenya Paraplegic Organization Documentary",
-      link: "https://kibet-dennis.github.io/guru-creations/",
-      description: "In-depth documentary showcasing the impact of KPO's work in the community",
-      category: "Documentaries",
-      tools: ["Final Cut Pro", "DaVinci Resolve", "Sony FX"],
-      thumbnail: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&h=400&fit=crop"
-    },
-    {
-      id: 3,
-      title: "Content",
-      link: "https://your-link-to-corporate-event-coverage.com",
-      description: "Engaging YouTube video production for a local content creator, focusing on spreading the gospel of GOD,lifestyle and travel,Politics/football,content strategy, and audience engagement",
-      category: "YouTube/Facebook/Instagram/TikTok/X",
-      tools: ["livestreaming", "OBS Studio" , "Adobe Premiere Pro" ,"Final Cut Pro" , " DaVinci Resolve"],
-      thumbnail: "https://i.postimg.cc/h4m8JrPT/495390099-679511234852033-2870589732951527553-n.jpg      npm install react-icons      npm install react-icons"
-    },
-    {
-      id: 4,
-      title: "Brand Commercial",
-      link: "https://your-link-to-corporate-event-coverage.com",
-      description: "Cinematic commercial for a local brand, highlighting their products and values",
-      category: "Commercial",
-      tools: ["Cinema 4D", "After Effects", "Premiere Pro"],
-      thumbnail: "https://i.postimg.cc/HkGC6JWM/mmmmmmmmm.jpg=crop"
-    },
-    {
-      id: 5,
-      title: "Web Design",
-       link: "https://your-link-to-corporate-event-coverage.com",
-      description: "Responsive and engaging web design for a local business, focusing on user experience and brand identity",
-      category: "Web Design",
-      tools: ["Figma", "Adobe XD", "HTML/CSS"],
+ const projects = [
+  {
+    id: 1,
+    title: "Event Coverage:- Livestreaming/ Photography",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Professional event documentation with cinematic storytelling approach",
+    category: "Corporate Event Coverage",
+    tools: [
+      {name: "13th Parliament", link: "https://youtu.be/n1DcVb-13H0" },
+      {name: "Parliamentary Budget Office Kenya", link:"https://youtu.be/ELD4Lg0rGt4"},
+      {name: "Live recording with Jeremy Jeradi", link: "https://youtu.be/-uCmOe0FrrM"},
+      { name: "Kabete Friends church", link: "https://www.facebook.com/share/1HGrCu6hJf/" },
+      { name: "Kabete Friends church ", link: "https://www.facebook.com/share/1CitBYdTq6/" },
+      { name: "Kabete Friends church", link: "https://www.youtube.com/live/lv3I5bbt4Z4?si=DbDgDrIDLrtZOVB3" },
+    ],
+    thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop"
+  },
+  {
+    id: 2,
+    title: "Kenya Paraplegic Organization Documentary",
+    link: "https://kibet-dennis.github.io/guru-creations/",
+    description: "In-depth documentary showcasing the impact of KPO's work in the community",
+    category: "Documentaries",
+    tools: [
+      { name: "KPO", link: "https://www.adobe.com/products/premiere.html" },
+      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
+      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+    ],
+    thumbnail: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&h=400&fit=crop"
+  },
+  {
+    id: 3,
+    title: "Content",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Engaging YouTube video production for a local content creator, focusing on spreading the gospel of GOD, lifestyle and travel, Politics/football, content strategy, and audience engagement",
+    category: "YouTube/Facebook/Instagram/TikTok/X",
+    tools: [
+      { name: "Premiere Pro", link: "https://www.adobe.com/products/premiere.html" },
+      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
+      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+    ],
+    thumbnail: "https://i.postimg.cc/h4m8JrPT/495390099-679511234852033-2870589732951527553-n.jpg"
+  },
+  {
+    id: 4,
+    title: "Brand Commercial",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Cinematic commercial for a local brand, highlighting their products and values",
+    category: "Commercial",
+    tools: ["Cinema 4D", "After Effects", "Premiere Pro"],
+    thumbnail: "https://i.postimg.cc/HkGC6JWM/mmmmmmmmm.jpg"
+  },
+  {
+    id: 5,
+    title: "Web Design",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Responsive and engaging web design for a local business, focusing on user experience and brand identity",
+    category: "Web Design",
+    tools: [
+      { name: "Premiere Pro", link: "https://www.adobe.com/products/premiere.html" },
+      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
+      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+    ],
+    thumbnail: "https://i.postimg.cc/3x1f5j6H/web-design.jpg"
+  },
+  {
+    id: 6,
+    title: "Digital Strategy",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Comprehensive digital media strategy development, including content planning, audience targeting, and platform optimization",
+    category: "Digital Strategy",
+    tools: [
+      { name: "Premiere Pro", link: "https://www.adobe.com/products/premiere.html" },
+      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
+      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+    ],
+    thumbnail: "https://i.postimg.cc/3x1f5j6H/digital-strategy.jpg"
+  },
+  {
+    id: 7,
+    title: "Photography",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "High-quality photography for events, lifestyle, and studio shoots, capturing moments with a creative touch",
+    category: "Photography",
+    tools: [
+      { name: "Premiere Pro", link: "https://www.adobe.com/products/premiere.html" },
+      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
+      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+    ],
+    thumbnail: "https://i.postimg.cc/3x1f5j6H/photography.jpg"
+  },
+  {
+    id: 8,
+    title: "Drone Shots & Aerial Coverage",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Stunning aerial photography and videography for events, real estate, and landscapes",
+    category: "Drone Photography",
+    tools: [
+      { name: "Premiere Pro", link: "https://www.adobe.com/products/premiere.html" },
+      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
+      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+    ],
+    thumbnail: "https://i.postimg.cc/3x1f5j6H/drone-coverage.jpg"
+  }
+];
 
+// (This block is not needed here; move the mapping logic inside the portfolio section below)
 
-      thumbnail: "https://i.postimg.cc/3x1f5j6H/web-design.jpg"
-    },
-    {
-      id: 6,
-      title: "Digital Strategy",
-       link: "https://your-link-to-corporate-event-coverage.com",
-      description: "Comprehensive digital media strategy development, including content planning, audience targeting, and platform optimization",
-      category: "Digital Strategy",
-      tools: ["Google Analytics", "Hootsuite", "Canva"],
-      thumbnail: "https://i.postimg.cc/3x1f5j6H/digital-strategy.jpg"
-    },
-    {
-      id: 7,
-      title: "Photography",
-       link: "https://your-link-to-corporate-event-coverage.com",
-      description: "High-quality photography for events, lifestyle, and studio shoots, capturing moments with a creative touch",
-      category: "Photography",
-      tools: ["Canon R5", "Adobe Lightroom", "Photoshop"],
-    },
-    {
-      id: 8,
-      title: "Drone Shots & Aerial Coverage",
-       link: "https://your-link-to-corporate-event-coverage.com",
-      description: "Stunning aerial photography and videography for events, real estate, and landscapes",
-      category: "Drone Photography",
-      tools: ["DJI Mavic Air 2", "Adobe Premiere Pro", "Final Cut Pro"],
-      thumbnail: "https://i.postimg.cc/3x1f5j6H/drone-coverage.jpg"
-    },
-  ];
 
   const services = [
     {
       icon: <Film className="w-8 h-8" />,
       title: "Livestreaming/productions",
-      description: "High-quality streaming for weddings, conferences, church services, and music events,Real-time audience engagement tools",
-        },
+      description: "High-quality streaming for weddings, conferences, church services, and music events,Real-time audience engagement tools", 
+    },
     {
       icon: <Edit3 className="w-8 h-8" />,
       title: " Branding & Design",
@@ -381,25 +414,23 @@ const Index = () => {
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-gray-400 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {project.tools.map((tool) => (
-                      project.link ? (
-                        <a
-                          key={tool}
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{ textDecoration: "underline" }}
-                        >
-                          <Badge variant="outline" className="text-xs hover:bg-red-500/20 hover:text-red-400 transition">
-                            {tool}
-                          </Badge>
-                        </a>
-                      ) : (
-                        <Badge key={tool} variant="outline" className="text-xs">
+                    {project.tools.map((tool, i) =>
+                      typeof tool === "string" ? (
+                        <Badge key={i} variant="outline" className="text-xs">
                           {tool}
                         </Badge>
+                      ) : (
+                        <a
+                          key={tool.name}
+                          href={tool.link}
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Badge variant="outline" className="text-xs hover:bg-red-500/20 hover:text-red-400 transition">
+                            {tool.name}
+                          </Badge>
+                        </a>
                       )
-                    ))}
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -414,11 +445,9 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">My Services</h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Comprehensive digital media solutions tailored to bring your
-              vision to life
+              Explore the range of digital media services I offer to help you achieve your goals.
             </p>
           </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card
@@ -692,9 +721,9 @@ const Index = () => {
 
       {/* WhatsApp Float Button */}
       <WhatsAppFloat />
-    </div> // This closes the div opened after "return ("
+    </div>
   );
-};
+}
 
 export default Index;
 
