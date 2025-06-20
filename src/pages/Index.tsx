@@ -97,7 +97,7 @@ const Index = () => {
       { name: "Kabete Friends church ", link: "https://www.facebook.com/share/1CitBYdTq6/" },
       { name: "Kabete Friends church", link: "https://www.youtube.com/live/lv3I5bbt4Z4?si=DbDgDrIDLrtZOVB3" },
     ],
-    thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop"
+    thumbnail: "https://i.postimg.cc/KYyF68Zj/nikon-1195964.jpg"
   },
   {
     id: 2,
