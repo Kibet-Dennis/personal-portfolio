@@ -28,7 +28,8 @@ import { Description } from "@radix-ui/react-toast";
 import { title } from "process";
 import { 
   FaEnvelope, FaYoutube, FaFacebook, FaInstagram, 
-  FaTiktok, FaXTwitter, FaLinkedin, FaTelegram, FaGithub, FaGlobe 
+  FaTiktok, FaXTwitter, FaLinkedin, FaTelegram, FaGithub, FaGlobe , 
+  FaLink
 } from 'react-icons/fa6';
 import React from 'react';
 
@@ -42,7 +43,8 @@ const iconStyles = {
   linkedin:   { color: '#0A66C2' },
   telegram:   { color: '#229ED9' },
   github:     { color: '#fff' },    // White
-  globe:      { color: '#4CAF50' }
+  globe:      { color: '#4CAF50' },
+  link: { color: '#1976D2' }
 };
 
 const Index = () => {
@@ -83,13 +85,15 @@ const Index = () => {
     id: 1,
     title: "Event Coverage:- Livestreaming/ Photography",
     link: "https://your-link-to-corporate-event-coverage.com",
-    description: "Professional event documentation with cinematic storytelling approach",
+    description: "Comprehensive coverage of corporate events, including livestreaming, photography, and video production",
     category: "Corporate Event Coverage",
     tools: [
       {name: "13th Parliament", link: "https://youtu.be/n1DcVb-13H0" },
       {name: "Parliamentary Budget Office Kenya", link:"https://youtu.be/ELD4Lg0rGt4"},
       {name: "Live recording with Jeremy Jeradi", link: "https://youtu.be/-uCmOe0FrrM"},
-      { name: "Kabete Friends church", link: "https://www.facebook.com/share/1HGrCu6hJf/" },
+      { name: "Tree Planting", link: "https://www.summarycreatives.co.ke/friends-church-quakers-kabete-youth-program-tree-planting.html" },
+      { name: "Internal Retreat", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Internal-Retreat.html" },
+      { name: "Gala Night", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Gala-Night.html" },
       { name: "Kabete Friends church ", link: "https://www.facebook.com/share/1CitBYdTq6/" },
       { name: "Kabete Friends church", link: "https://www.youtube.com/live/lv3I5bbt4Z4?si=DbDgDrIDLrtZOVB3" },
     ],
@@ -97,14 +101,13 @@ const Index = () => {
   },
   {
     id: 2,
-    title: "Kenya Paraplegic Organization Documentary",
+    title: "Documentaries",
     link: "https://kibet-dennis.github.io/guru-creations/",
-    description: "In-depth documentary showcasing the impact of KPO's work in the community",
+    description: "KPO is a non-governmental organization dedicated to creating an inclusive society where people with spinal cord injuries and other physical disabilities live independently and with dignity. KPO's core mission involves advocating for the rights and needs of disabled individuals, ensuring their inclusion in all societal aspects, including government planning and budgeting. ",
     category: "Documentaries",
     tools: [
-      { name: "KPO", link: "https://www.adobe.com/products/premiere.html" },
-      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
-      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+      { name: "KPO", link: "https://www.summarycreatives.co.ke/assets/img/team/logo3.png" },
+      
     ],
     thumbnail: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&h=400&fit=crop"
   },
@@ -127,21 +130,25 @@ const Index = () => {
     link: "https://your-link-to-corporate-event-coverage.com",
     description: "Cinematic commercial for a local brand, highlighting their products and values",
     category: "Commercial",
-    tools: ["Cinema 4D", "After Effects", "Premiere Pro"],
+     tools: [
+      { name: "KPO", link: "https://www.summarycreatives.co.ke/assets/img/team/logo3.png" },
+      { name: "Guru Creations", link: "https://kibet-dennis.github.io/guru-creations/" },
+      { name: "Sammary creatives limited", link: "https://www.summarycreatives.co.ke/" }
+    ],
     thumbnail: "https://i.postimg.cc/HkGC6JWM/mmmmmmmmm.jpg"
   },
   {
     id: 5,
     title: "Web Design",
     link: "https://your-link-to-corporate-event-coverage.com",
-    description: "Responsive and engaging web design for a local business, focusing on user experience and brand identity",
+    description: "Engaging and responsive web design for brands and individuals, including portfolio sites and e-commerce solutions",
     category: "Web Design",
     tools: [
-      { name: "Premiere Pro", link: "https://www.adobe.com/products/premiere.html" },
-      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
-      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+      { name: "VScode", link: "https://i.postimg.cc/02QnnWS3/work.jpg" },
+      { name: "Guru Creations", link: "https://www.adobe.com/products/aftereffects.html" },
+      { name: "Kabete  Friends Church", link: "https://www.canon.com/cameras/eos-r5/" }
     ],
-    thumbnail: "https://i.postimg.cc/3x1f5j6H/web-design.jpg"
+    thumbnail: "https://i.postimg.cc/vmQdSwvM/Gemini-Generated-Image-vgjtsevgjtsevgjt.png"
   },
   {
     id: 6,
@@ -150,11 +157,11 @@ const Index = () => {
     description: "Comprehensive digital media strategy development, including content planning, audience targeting, and platform optimization",
     category: "Digital Strategy",
     tools: [
-      { name: "Premiere Pro", link: "https://www.adobe.com/products/premiere.html" },
+      { name: "Our Process", link: "https://i.postimg.cc/66GTXdYM/STRATEGY.jpg" },
       { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
       { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
     ],
-    thumbnail: "https://i.postimg.cc/3x1f5j6H/digital-strategy.jpg"
+    thumbnail: "https://i.postimg.cc/hvGJLw9g/Gemini-Generated-Image-nuohtenuohtenuoh.png"
   },
   {
     id: 7,
@@ -163,11 +170,12 @@ const Index = () => {
     description: "High-quality photography for events, lifestyle, and studio shoots, capturing moments with a creative touch",
     category: "Photography",
     tools: [
-      { name: "Premiere Pro", link: "https://www.adobe.com/products/premiere.html" },
-      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
-      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+      { name: "Tree Planting", link: "https://www.summarycreatives.co.ke/friends-church-quakers-kabete-youth-program-tree-planting.html" },
+      { name: "Internal Retreat", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Internal-Retreat.html" },
+      { name: "Gala Night", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Gala-Night.html" },
+      { name: "Kabete Friends church ", link: "https://www.facebook.com/share/1CitBYdTq6/" },
     ],
-    thumbnail: "https://i.postimg.cc/3x1f5j6H/photography.jpg"
+    thumbnail: "https://i.postimg.cc/KYyF68Zj/nikon-1195964.jpg"
   },
   {
     id: 8,
@@ -714,6 +722,14 @@ const Index = () => {
               title="Website"
             >
               <FaGlobe size={24} style={iconStyles.globe} />
+            </a>
+            <a
+              href="https://www.summarycreatives.co.ke/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Summary Creatives"
+            >
+              <FaLink size={24} style={iconStyles.link} />
             </a>
           </div>
         </div>
