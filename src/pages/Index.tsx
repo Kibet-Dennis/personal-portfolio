@@ -118,9 +118,13 @@ const Index = () => {
     description: "Engaging YouTube video production for a local content creator, focusing on spreading the gospel of GOD, lifestyle and travel, Politics/football, content strategy, and audience engagement",
     category: "YouTube/Facebook/Instagram/TikTok/X",
     tools: [
-      { name: "Premiere Pro", link: "https://www.adobe.com/products/premiere.html" },
-      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
-      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+      { name: "YouTube", link: "https://www.youtube.com/@gurucreationltd" },
+      { name: "Facebook", link: "https://www.facebook.com/dennis.sebastien.75" },
+      { name: "TikTok", link: "https://www.tiktok.com/cameras/eos-r5/" },
+      { name: "Instagram", link: "https://www.instagram.com/dennis.sebastien.75/" },
+      { name: "X", link: "https://x.com/@Dennis_2kibet" },
+      { name: "LinkedIn", link: "https://www.linkedin.com/in/denniskibet/" },
+      { name: "Telegram", link: "https://t.me/denniskibet" },
     ],
     thumbnail: "https://i.postimg.cc/h4m8JrPT/495390099-679511234852033-2870589732951527553-n.jpg"
   },
@@ -158,43 +162,40 @@ const Index = () => {
     category: "Digital Strategy",
     tools: [
       { name: "Our Process", link: "https://i.postimg.cc/66GTXdYM/STRATEGY.jpg" },
-      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
-      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
+      
     ],
     thumbnail: "https://i.postimg.cc/hvGJLw9g/Gemini-Generated-Image-nuohtenuohtenuoh.png"
   },
-  {
-    id: 7,
-    title: "Photography",
-    link: "https://your-link-to-corporate-event-coverage.com",
-    description: "High-quality photography for events, lifestyle, and studio shoots, capturing moments with a creative touch",
-    category: "Photography",
-    tools: [
-      { name: "Tree Planting", link: "https://www.summarycreatives.co.ke/friends-church-quakers-kabete-youth-program-tree-planting.html" },
-      { name: "Internal Retreat", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Internal-Retreat.html" },
-      { name: "Gala Night", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Gala-Night.html" },
-      { name: "Kabete Friends church ", link: "https://www.facebook.com/share/1CitBYdTq6/" },
-    ],
-    thumbnail: "https://i.postimg.cc/KYyF68Zj/nikon-1195964.jpg"
-  },
-  {
-    id: 8,
-    title: "Drone Shots & Aerial Coverage",
-    link: "https://your-link-to-corporate-event-coverage.com",
-    description: "Stunning aerial photography and videography for events, real estate, and landscapes",
-    category: "Drone Photography",
-    tools: [
-      { name: "Premiere Pro", link: "https://www.adobe.com/products/premiere.html" },
-      { name: "After Effects", link: "https://www.adobe.com/products/aftereffects.html" },
-      { name: "Canon R5", link: "https://www.canon.com/cameras/eos-r5/" }
-    ],
-    thumbnail: "https://i.postimg.cc/3x1f5j6H/drone-coverage.jpg"
-  }
+  // ...existing code...
+// {
+//   id: 7,
+//   title: "Photography",
+//   link: "https://your-link-to-corporate-event-coverage.com",
+//   description: "High-quality photography for events, lifestyle, and studio shoots, capturing moments with a creative touch",
+//   category: "Photography",
+//   tools: [
+//     { name: "Tree Planting", link: "https://www.summarycreatives.co.ke/friends-church-quakers-kabete-youth-program-tree-planting.html" },
+//     { name: "Internal Retreat", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Internal-Retreat.html" },
+//     { name: "Gala Night", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Gala-Night.html" },
+//     { name: "Kabete Friends church ", link: "https://www.facebook.com/share/1CitBYdTq6/" },
+//   ],
+//   thumbnail: "https://i.postimg.cc/KYyF68Zj/nikon-1195964.jpg"
+// },
+// {
+//   id: 8,
+//   title: "YouTube",
+//   link: "https://your-link-to-corporate-event-coverage.com",
+//   description: "Stunning aerial photography and videography for events, real estate, and landscapes",
+//   category: "Career Wise",
+//   tools: [
+//     { name: "Tech Assistant", link: "https://www.adobe.com/products/premiere.html" },
+//     { name: "Data Analytic", link: "https://www.adobe.com/products/aftereffects.html" },
+//     { name: "", link: "https://www.canon.com/cameras/eos-r5/" }
+//   ],
+//   thumbnail: "https://i.postimg.cc/3x1f5j6H/drone-coverage.jpg"
+// }
+// ...existing code...
 ];
-
-// (This block is not needed here; move the mapping logic inside the portfolio section below)
-
-
   const services = [
     {
       icon: <Film className="w-8 h-8" />,
