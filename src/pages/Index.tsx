@@ -138,6 +138,7 @@ const Index = () => {
       { name: "KPO", link: "https://www.summarycreatives.co.ke/assets/img/team/logo3.png" },
       { name: "Guru Creations", link: "https://kibet-dennis.github.io/guru-creations/" },
       { name: "Sammary creatives limited", link: "https://www.summarycreatives.co.ke/" }
+      { name: "Kabete Friends Church", link: "https://ambroseoliver.github.io/FRIENDS-KABETE-LOCAL-CHURCH-/" }
     ],
     thumbnail: "https://i.postimg.cc/HkGC6JWM/mmmmmmmmm.jpg"
   },
@@ -150,7 +151,7 @@ const Index = () => {
     tools: [
       { name: "VScode", link: "https://i.postimg.cc/02QnnWS3/work.jpg" },
       { name: "Guru Creations", link: "https://www.adobe.com/products/aftereffects.html" },
-      { name: "Kabete  Friends Church", link: "https://www.canon.com/cameras/eos-r5/" }
+      { name: "Kabete  Friends Church", link: "https://ambroseoliver.github.io/FRIENDS-KABETE-LOCAL-CHURCH-/" }
     ],
     thumbnail: "https://i.postimg.cc/vmQdSwvM/Gemini-Generated-Image-vgjtsevgjtsevgjt.png"
   },
