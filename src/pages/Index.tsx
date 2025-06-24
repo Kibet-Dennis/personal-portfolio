@@ -28,8 +28,10 @@ import { Description } from "@radix-ui/react-toast";
 import { title } from "process";
 import { 
   FaEnvelope, FaYoutube, FaFacebook, FaInstagram, 
-  FaTiktok, FaXTwitter, FaLinkedin, FaTelegram, FaGithub, FaGlobe 
+  FaTiktok, FaXTwitter, FaLinkedin, FaTelegram, FaGithub, FaGlobe , 
+  FaLink
 } from 'react-icons/fa6';
+import React from 'react';
 
 const iconStyles = {
   envelope:   { color: '#EA4335' }, // Gmail Red
@@ -41,7 +43,8 @@ const iconStyles = {
   linkedin:   { color: '#0A66C2' },
   telegram:   { color: '#229ED9' },
   github:     { color: '#fff' },    // White
-  globe:      { color: '#4CAF50' }
+  globe:      { color: '#4CAF50' },
+  link: { color: '#1976D2' }
 };
 
 const Index = () => {
@@ -77,47 +80,129 @@ const Index = () => {
     }
   };
 
-  const projects = [
-    {
-      id: 1,
-      title: "Event Coverage:- Livestreaming/ Photography",
-      description: "Professional event documentation with cinematic storytelling approach",
-      category: "Corporate Event Coverage",
-      tools: ["Premiere Pro", "After Effects", "Canon R5 "],
-      thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop"
-    },
-    {
-      id: 2,
-      title: "Kenya Paraplegic Organization Documentary",
-      description: "In-depth documentary showcasing the impact of KPO's work in the community",
-      category: "Documentaries",
-      tools: ["Final Cut Pro", "DaVinci Resolve", "Sony FX"],
-      thumbnail: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&h=400&fit=crop"
-    },
-    {
-      id: 3,
-      title: "Content",
-      description: "Engaging YouTube video production for a local content creator, focusing on spreading the gospel of GOD,lifestyle and travel,Politics/football,content strategy, and audience engagement",
-      category: "YouTube/Facebook/Instagram/TikTok/X",
-      tools: ["livestreaming", "OBS Studio" , "Adobe Premiere Pro" ,"Final Cut Pro" , " DaVinci Resolve"],
-      thumbnail: "https://i.postimg.cc/h4m8JrPT/495390099-679511234852033-2870589732951527553-n.jpg      npm install react-icons      npm install react-icons"
-    },
-    {
-      id: 4,
-      title: "Brand Commercial",
-      description: "Cinematic commercial for a local brand, highlighting their products and values",
-      category: "Commercial",
-      tools: ["Cinema 4D", "After Effects", "Premiere Pro"],
-      thumbnail: "https://i.postimg.cc/HkGC6JWM/mmmmmmmmm.jpg=crop"
-    }
-  ];
-
+ const projects = [
+  {
+    id: 1,
+    title: "Event Coverage:- Livestreaming/ Photography",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Comprehensive coverage of corporate events, including livestreaming, photography, and video production",
+    category: "Corporate Event Coverage",
+    tools: [
+      {name: "13th Parliament", link: "https://youtu.be/n1DcVb-13H0" },
+      {name: "Parliamentary Budget Office Kenya", link:"https://youtu.be/ELD4Lg0rGt4"},
+      {name: "Live recording with Jeremy Jeradi", link: "https://youtu.be/-uCmOe0FrrM"},
+      { name: "Tree Planting", link: "https://www.summarycreatives.co.ke/friends-church-quakers-kabete-youth-program-tree-planting.html" },
+      { name: "Internal Retreat", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Internal-Retreat.html" },
+      { name: "Gala Night", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Gala-Night.html" },
+      { name: "Kabete Friends church ", link: "https://www.facebook.com/share/1CitBYdTq6/" },
+      { name: "Kabete Friends church", link: "https://www.youtube.com/live/lv3I5bbt4Z4?si=DbDgDrIDLrtZOVB3" },
+    ],
+    thumbnail: "https://i.postimg.cc/KYyF68Zj/nikon-1195964.jpg"
+  },
+  {
+    id: 2,
+    title: "Documentaries",
+    link: "https://kibet-dennis.github.io/guru-creations/",
+    description: "KPO is a non-governmental organization dedicated to creating an inclusive society where people with spinal cord injuries and other physical disabilities live independently and with dignity. KPO's core mission involves advocating for the rights and needs of disabled individuals, ensuring their inclusion in all societal aspects, including government planning and budgeting. ",
+    category: "Documentaries",
+    tools: [
+      { name: "KPO", link: "https://www.summarycreatives.co.ke/assets/img/team/logo3.png" },
+      
+    ],
+    thumbnail: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&h=400&fit=crop"
+  },
+  {
+    id: 3,
+    title: "Content",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Engaging YouTube video production for a local content creator, focusing on spreading the gospel of GOD, lifestyle and travel, Politics/football, content strategy, and audience engagement",
+    category: "YouTube/Facebook/Instagram/TikTok/X",
+    tools: [
+      { name: "YouTube", link: "https://www.youtube.com/@gurucreationltd" },
+      { name: "Facebook", link: "https://www.facebook.com/dennis.sebastien.75" },
+      { name: "TikTok", link: "https://www.tiktok.com/cameras/eos-r5/" },
+      { name: "Instagram", link: "https://www.instagram.com/dennis.sebastien.75/" },
+      { name: "X", link: "https://x.com/@Dennis_2kibet" },
+      { name: "LinkedIn", link: "https://www.linkedin.com/in/denniskibet/" },
+      { name: "Telegram", link: "https://t.me/denniskibet" },
+    ],
+    thumbnail: "https://i.postimg.cc/h4m8JrPT/495390099-679511234852033-2870589732951527553-n.jpg"
+  },
+  {
+    id: 4,
+    title: "Brand Commercial",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Cinematic commercial for a local brand, highlighting their products and values",
+    category: "Commercial",
+     tools: [
+      { name: "KPO", link: "https://www.summarycreatives.co.ke/assets/img/team/logo3.png" },
+      { name: "Guru Creations", link: "https://kibet-dennis.github.io/guru-creations/" },
+      { name: "Sammary creatives limited", link: "https://www.summarycreatives.co.ke/" },
+      { name: "Kabete Friends Church", link: "https://ambroseoliver.github.io/FRIENDS-KABETE-LOCAL-CHURCH-/" },
+    ],
+    thumbnail: "https://i.postimg.cc/HkGC6JWM/mmmmmmmmm.jpg"
+  },
+  {
+    id: 5,
+    title: "Web Design",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Engaging and responsive web design for brands and individuals, including portfolio sites and e-commerce solutions",
+    category: "Web Design",
+    tools: [
+      { name: "VScode", link: "https://i.postimg.cc/02QnnWS3/work.jpg" },
+      { name: "Guru Creations", link: "https://www.adobe.com/products/aftereffects.html" },
+      { name: "Kabete  Friends Church", link: "https://ambroseoliver.github.io/FRIENDS-KABETE-LOCAL-CHURCH-/" },
+    ],
+    thumbnail: "https://i.postimg.cc/vmQdSwvM/Gemini-Generated-Image-vgjtsevgjtsevgjt.png"
+  },
+  {
+    id: 6,
+    title: "Digital Strategy",
+    link: "https://your-link-to-corporate-event-coverage.com",
+    description: "Comprehensive digital media strategy development, including content planning, audience targeting, and platform optimization",
+    category: "Digital Strategy",
+    tools: [
+      { name: "Our Process", link: "https://i.postimg.cc/66GTXdYM/STRATEGY.jpg" },
+      
+    ],
+    thumbnail: "https://i.postimg.cc/hvGJLw9g/Gemini-Generated-Image-nuohtenuohtenuoh.png"
+  },
+  // ...existing code...
+// {
+//   id: 7,
+//   title: "Photography",
+//   link: "https://your-link-to-corporate-event-coverage.com",
+//   description: "High-quality photography for events, lifestyle, and studio shoots, capturing moments with a creative touch",
+//   category: "Photography",
+//   tools: [
+//     { name: "Tree Planting", link: "https://www.summarycreatives.co.ke/friends-church-quakers-kabete-youth-program-tree-planting.html" },
+//     { name: "Internal Retreat", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Internal-Retreat.html" },
+//     { name: "Gala Night", link: "https://www.summarycreatives.co.ke/Kabete-Friends-Church-Gala-Night.html" },
+//     { name: "Kabete Friends church ", link: "https://www.facebook.com/share/1CitBYdTq6/" },
+//   ],
+//   thumbnail: "https://i.postimg.cc/KYyF68Zj/nikon-1195964.jpg"
+// },
+// {
+//   id: 8,
+//   title: "YouTube",
+//   link: "https://your-link-to-corporate-event-coverage.com",
+//   description: "Stunning aerial photography and videography for events, real estate, and landscapes",
+//   category: "Career Wise",
+//   tools: [
+//     { name: "Tech Assistant", link: "https://www.adobe.com/products/premiere.html" },
+//     { name: "Data Analytic", link: "https://www.adobe.com/products/aftereffects.html" },
+//     { name: "", link: "https://www.canon.com/cameras/eos-r5/" }
+//   ],
+//   thumbnail: "https://i.postimg.cc/3x1f5j6H/drone-coverage.jpg"
+// }
+// ...existing code...
+];
   const services = [
     {
       icon: <Film className="w-8 h-8" />,
       title: "Livestreaming/productions",
-      description: "High-quality streaming for weddings, conferences, church services, and music events,Real-time audience engagement tools",
-        },
+      description: "High-quality streaming for weddings, conferences, church services, and music events,Real-time audience engagement tools", 
+    },
     {
       icon: <Edit3 className="w-8 h-8" />,
       title: " Branding & Design",
@@ -339,11 +424,23 @@ const Index = () => {
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-gray-400 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {project.tools.map((tool) => (
-                      <Badge key={tool} variant="outline" className="text-xs">
-                        {tool}
-                      </Badge>
-                    ))}
+                    {project.tools.map((tool, i) =>
+                      typeof tool === "string" ? (
+                        <Badge key={i} variant="outline" className="text-xs">
+                          {tool}
+                        </Badge>
+                      ) : (
+                        <a
+                          key={tool.name}
+                          href={tool.link}
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Badge variant="outline" className="text-xs hover:bg-red-500/20 hover:text-red-400 transition">
+                            {tool.name}
+                          </Badge>
+                        </a>
+                      )
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -358,11 +455,9 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">My Services</h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Comprehensive digital media solutions tailored to bring your
-              vision to life
+              Explore the range of digital media services I offer to help you achieve your goals.
             </p>
           </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card
@@ -630,15 +725,23 @@ const Index = () => {
             >
               <FaGlobe size={24} style={iconStyles.globe} />
             </a>
+            <a
+              href="https://www.summarycreatives.co.ke/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Summary Creatives"
+            >
+              <FaLink size={24} style={iconStyles.link} />
+            </a>
           </div>
         </div>
       </footer>
 
       {/* WhatsApp Float Button */}
       <WhatsAppFloat />
-    </div> // This closes the div opened after "return ("
+    </div>
   );
-};
+}
 
 export default Index;
 
