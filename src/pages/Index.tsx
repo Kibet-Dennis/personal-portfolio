@@ -162,7 +162,7 @@ const Index = () => {
     description: "Comprehensive digital media strategy development, including content planning, audience targeting, and platform optimization",
     category: "Digital Strategy",
     tools: [
-      { name: "Our Process", link: "<a href='strategy' target='_blank' rel='noopener noreferrer'>Strategy</a>" },
+      { name: "Our Process", link: "https://kibet-dennis.github.io/strategy./" },
 
     ],
     thumbnail: "https://i.postimg.cc/hvGJLw9g/Gemini-Generated-Image-nuohtenuohtenuoh.png"
