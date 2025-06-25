@@ -149,7 +149,7 @@ const Index = () => {
     description: "Engaging and responsive web design for brands and individuals, including portfolio sites and e-commerce solutions",
     category: "Web Design",
     tools: [
-      { name: "VScode", link: "https://i.postimg.cc/02QnnWS3/work.jpg" },
+      { name: "Web Developer", link: "https://i.postimg.cc/02QnnWS3/work.jpg" },
       { name: "Guru Creations", link: "https://www.adobe.com/products/aftereffects.html" },
       { name: "Kabete  Friends Church", link: "https://ambroseoliver.github.io/FRIENDS-KABETE-LOCAL-CHURCH-/" },
     ],
@@ -739,6 +739,7 @@ const Index = () => {
 
       {/* WhatsApp Float Button */}
       <WhatsAppFloat />
+
     </div>
   );
 }
