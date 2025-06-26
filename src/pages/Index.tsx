@@ -163,7 +163,7 @@ const Index = () => {
     category: "Digital Strategy",
     tools: [
       { name: "Our Process", link: "https://kibet-dennis.github.io/strategy./" },
-      { name: "Photography/Videography", link: "https://www.adobe.com/products/premiere.html" },
+      { name: "Photography/Videography", link: "https://kibet-dennis.github.io/videography/" },
 
     ],
     thumbnail: "https://i.postimg.cc/hvGJLw9g/Gemini-Generated-Image-nuohtenuohtenuoh.png"
